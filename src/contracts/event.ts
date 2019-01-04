@@ -95,7 +95,6 @@ export interface SportEventCompact {
     isTeamSwap: boolean
     tags: string[]
     entityType: EntityType
-    media: MediaProvider[]
 }
 
 export interface SportEventChange {
