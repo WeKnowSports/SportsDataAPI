@@ -1,5 +1,5 @@
 import { EntityType, Dictionary, ISODateTimeString } from './common';
-export declare type EventType = "Fixture" | "Outright" | "AntePostRace" | "DayOfEventRace";
+export declare type EventType = "Fixture" | "Outright" | "AntePostRace" | "DayOfEventRace" | "AggregateFixture";
 /**
     * Queryable entity
     */
@@ -81,7 +81,6 @@ export interface SportEventCompact {
     isTeamSwap: boolean;
     tags: string[];
     entityType: EntityType;
-    media: MediaProvider[];
 }
 export interface SportEventChange {
     id: string;

@@ -1,6 +1,6 @@
 import { EntityType, Dictionary, ISODateTimeString } from './common'
 
-export type EventType = "Fixture" | "Outright" | "AntePostRace" | "DayOfEventRace"
+export type EventType = "Fixture" | "Outright" | "AntePostRace" | "DayOfEventRace" | "AggregateFixture"
 
 /**
     * Queryable entity
@@ -94,8 +94,7 @@ export interface SportEventCompact {
     isSuspended: boolean
     isTeamSwap: boolean
     tags: string[]
-    entityType: EntityType,
-    media: MediaProvider[]
+    entityType: EntityType
 }
 
 export interface SportEventChange {

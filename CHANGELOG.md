@@ -1,4 +1,14 @@
 # Changelog
+## [2.4.0] - 
+### Added
+- Add EventTypes: "AggregateFixture"
+### Removed
+-  media: MediaProvider[]
+
+## [2.3.2] - 
+### ReturnBack
+-  media: MediaProvider[] (will be removed in 2.4.0)
+
 ## [2.3.1] - 
 ### Added
 - Add EventTypes: AntePostRace, DayOfEventRace
