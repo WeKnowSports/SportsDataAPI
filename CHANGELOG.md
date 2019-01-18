@@ -1,4 +1,9 @@
 # Changelog
+## [2.3.1] - 
+### Added
+- Add EventTypes: AntePostRace, DayOfEventRace
+- Add GameStatuses: RaceOff, Resulted
+
 ## [2.3.0] - 
 ### Added
 - Add event entity for compact projection
