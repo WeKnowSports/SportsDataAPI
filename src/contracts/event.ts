@@ -94,7 +94,8 @@ export interface SportEventCompact {
     isSuspended: boolean
     isTeamSwap: boolean
     tags: string[]
-    entityType: EntityType
+    entityType: EntityType,
+    media: MediaProvider[]
 }
 
 export interface SportEventChange {
