@@ -1,5 +1,5 @@
 import { EntityType, Dictionary, ISODateTimeString } from './common';
-export declare type EventType = "Fixture" | "Outright";
+export declare type EventType = "Fixture" | "Outright" | "AntePostRace" | "DayOfEventRace";
 /**
     * Queryable entity
     */
@@ -81,7 +81,6 @@ export interface SportEventCompact {
     isTeamSwap: boolean;
     tags: string[];
     entityType: EntityType;
-    media: MediaProvider[];
 }
 export interface SportEventChange {
     id: string;
@@ -121,7 +120,9 @@ export interface ParticipantChange {
 }
 export declare enum GameStatus {
     NotStarted = "NotStarted",
-    InProgress = "InProgress"
+    InProgress = "InProgress",
+    RaceOff = "RaceOff",
+    Resulted = "Resulted"
 }
 export declare enum ClockDirection {
     Stopwatch = "Stopwatch",

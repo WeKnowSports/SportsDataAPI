@@ -1,6 +1,6 @@
 import { EntityType, Dictionary, ISODateTimeString } from './common'
 
-export type EventType = "Fixture" | "Outright"
+export type EventType = "Fixture" | "Outright" | "AntePostRace" | "DayOfEventRace"
 
 /**
     * Queryable entity
@@ -141,7 +141,9 @@ export interface ParticipantChange {
 
 export enum GameStatus {
     NotStarted = "NotStarted",
-    InProgress = "InProgress"
+    InProgress = "InProgress",
+	RaceOff = "RaceOff",
+	Resulted = "Resulted"
 }
 
 export enum ClockDirection {
