@@ -2,6 +2,7 @@
 ## [2.4.0] - 
 ### Added
 - Add EventTypes: "AggregateFixture"
+- Add new contract: Incident
 ### Removed
 -  media: MediaProvider[]
 
