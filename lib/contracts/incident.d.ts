@@ -15,5 +15,5 @@ export interface Incident {
     /** DateTime of incident */
     timeInUTC: ISODateTimeString;
     /** Game part of incident */
-    InGamePart: string;
+    inGamePart: string;
 }
