@@ -1,6 +1,7 @@
 # Changelog
 ## [2.4.0] - 
 ### Added
+- Add event entity for ToteDetails projection
 - Add EventTypes: "AggregateFixture"
 - Add new contract: Incident
 ### Removed
