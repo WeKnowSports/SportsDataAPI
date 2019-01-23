@@ -97,6 +97,40 @@ export interface SportEventCompact {
     entityType: EntityType
 }
 
+export interface SportEventWithToteDetails {
+    id: string
+    type: EventType
+    sportId: string
+    sportName: string
+    sportOrder: number
+    regionId: string
+    regionCode: string
+    regionName: string
+    leagueId: string
+    leagueName: string
+    leagueOrder: number
+    isTopLeague: boolean
+    participants: Participant[]
+    eventName: string
+    betslipLine: string
+    totalMarketsCount: number
+    marketLinesCount: number
+    marketGroups: MarketGroup[]
+    startEventDate: ISODateTimeString
+    status: GameStatus
+    score: GameScore | null
+    isLive: boolean
+    isGoingLive: boolean
+    liveGameState: LiveGameState | null
+    isSuspended: boolean
+    isTeamSwap: boolean
+    tags: string[]
+    entityType: EntityType
+    metadata: Dictionary<any>
+    media: MediaProvider[]
+    toteDetails: ToteDetails | null
+}
+
 export interface SportEventChange {
     id: string,
     participants: Participant[],
@@ -215,4 +249,16 @@ export enum GamePart {
     BreakAfterSeventhInning = "BreakAfterSeventhInning",
     BreakAfterEighthInning = "BreakAfterEighthInning",
     BreakAfterNinthInning = "BreakAfterNinthInning"
+}
+
+export interface ToteDetails {
+    pools: TotePoolDetails[]
+}
+
+export interface TotePoolDetails {
+    poolName: string,
+    minStake: number,
+    winners: string,
+    returns: number,
+    total: number | null
 }
