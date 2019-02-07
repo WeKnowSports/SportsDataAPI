@@ -6,17 +6,14 @@
 - Add new contract: Incident
 ### Removed
 -  media: MediaProvider[]
-
-## [2.3.2] - 
+## [2.3.2] - 1/18/2019
 ### ReturnBack
 -  media: MediaProvider[] (will be removed in 2.4.0)
-
-## [2.3.1] - 
+## [2.3.1] - 1/18/2019
 ### Added
 - Add EventTypes: AntePostRace, DayOfEventRace
 - Add GameStatuses: RaceOff, Resulted
-
-## [2.3.0] - 
+## [2.3.0] - 1/4/2019
 ### Added
 - Add event entity for compact projection
 - Add SportEventId and EntityId entities for onlyID projection
