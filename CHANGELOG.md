@@ -1,4 +1,7 @@
 # Changelog
+## [2.5.0] - 2/22/2019
+### Added
+- Add 'Finished' status to GamePart
 ## [2.4.0] - 2/7/2019
 ### Added
 - Add event entity for ToteDetails projection

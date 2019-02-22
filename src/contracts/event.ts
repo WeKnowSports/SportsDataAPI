@@ -248,7 +248,8 @@ export enum GamePart {
     BreakAfterSixthInning = "BreakAfterSixthInning",
     BreakAfterSeventhInning = "BreakAfterSeventhInning",
     BreakAfterEighthInning = "BreakAfterEighthInning",
-    BreakAfterNinthInning = "BreakAfterNinthInning"
+    BreakAfterNinthInning = "BreakAfterNinthInning",
+    Finished = "Finished"
 }
 
 export interface ToteDetails {
