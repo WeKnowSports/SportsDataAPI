@@ -1,4 +1,7 @@
 # Changelog
+## [2.6.0] - 3/19/2019
+### Added
+- Add startEventDate to SportEventChange
 ## [2.5.0] - 2/22/2019
 ### Added
 - Add 'Finished' status to GamePart
