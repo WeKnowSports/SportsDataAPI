@@ -35,7 +35,7 @@ export interface SportEvent {
     eventName: string
     // betslipLine
     betslipLine: string
-    // not queriable
+    // not queryable
     totalMarketsCount: number
 
     marketLinesCount: number
@@ -136,6 +136,7 @@ export interface SportEventChange {
     participants: Participant[],
     totalMarketsCount: number,
     marketLinesCount: number,
+    startEventDate: ISODateTimeString,
     status: GameStatus,
     score: GameScore | null,
     isLive: boolean,
@@ -176,8 +177,8 @@ export interface ParticipantChange {
 export enum GameStatus {
     NotStarted = "NotStarted",
     InProgress = "InProgress",
-	RaceOff = "RaceOff",
-	Resulted = "Resulted"
+    RaceOff = "RaceOff",
+    Resulted = "Resulted"
 }
 
 export enum ClockDirection {
