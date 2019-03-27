@@ -266,12 +266,12 @@ export interface TotePoolDetails {
     legs: number | null,
     isUnordered: boolean,
     combine: number | null,
-    IsQuick: boolean,
-    StringBettingAvailable: boolean,
-    IsWheel: boolean,
-    IsBox: boolean,
-    IsPowerBox: boolean,
-    IsLeading: boolean,
-    IsKeyWheel: boolean,
-    IsKeyBox: boolean
+    isQuick: boolean,
+    stringBettingAvailable: boolean,
+    isWheel: boolean,
+    isBox: boolean,
+    isPowerBox: boolean,
+    isLeading: boolean,
+    isKeyWheel: boolean,
+    isKeyBox: boolean
 }
