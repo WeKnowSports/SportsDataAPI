@@ -1,4 +1,7 @@
 # Changelog
+## [2.6.0]
+### Added
+- Added new fields to totePoolDetails
 ## [2.5.0]
 ### Added
 - Add 'Finished' status to GamePart

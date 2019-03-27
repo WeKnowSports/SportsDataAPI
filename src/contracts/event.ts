@@ -261,6 +261,17 @@ export interface TotePoolDetails {
     poolName: string,
     minStake: number,
     winners: string,
-    returns: number,
-    total: number | null
+    poolType: string,
+    rows: string,
+    legs: number | null,
+    isUnordered: boolean,
+    combine: number | null,
+    IsQuick: boolean,
+    StringBettingAvailable: boolean,
+    IsWheel: boolean,
+    IsBox: boolean,
+    IsPowerBox: boolean,
+    IsLeading: boolean,
+    IsKeyWheel: boolean,
+    IsKeyBox: boolean
 }
