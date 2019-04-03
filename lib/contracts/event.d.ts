@@ -120,6 +120,7 @@ export interface SportEventChange {
     participants: Participant[];
     totalMarketsCount: number;
     marketLinesCount: number;
+    startEventDate: ISODateTimeString;
     status: GameStatus;
     score: GameScore | null;
     isLive: boolean;
@@ -219,7 +220,8 @@ export declare enum GamePart {
     BreakAfterSixthInning = "BreakAfterSixthInning",
     BreakAfterSeventhInning = "BreakAfterSeventhInning",
     BreakAfterEighthInning = "BreakAfterEighthInning",
-    BreakAfterNinthInning = "BreakAfterNinthInning"
+    BreakAfterNinthInning = "BreakAfterNinthInning",
+    Finished = "Finished"
 }
 export interface ToteDetails {
     pools: TotePoolDetails[];
@@ -228,6 +230,17 @@ export interface TotePoolDetails {
     poolName: string;
     minStake: number;
     winners: string;
-    returns: number;
-    total: number | null;
+    poolType: string;
+    rows: string;
+    legs: number | null;
+    isUnordered: boolean;
+    combine: number | null;
+    isQuick: boolean;
+    stringBettingAvailable: boolean;
+    isWheel: boolean;
+    isBox: boolean;
+    isPowerBox: boolean;
+    isLeading: boolean;
+    isKeyWheel: boolean;
+    isKeyBox: boolean;
 }
