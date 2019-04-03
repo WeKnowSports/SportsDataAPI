@@ -54,5 +54,5 @@ export interface LeagueChange {
     fixturesTotalCount: number,
     fixturesCount: number,
     outrightsTotalCount: number,
-    liveOutrightsTotalCount: number;
+    liveOutrightsTotalCount: number
 }
