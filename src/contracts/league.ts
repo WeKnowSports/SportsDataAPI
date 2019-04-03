@@ -43,6 +43,9 @@ export interface League {
     tags: string[]
 
     masterLeagueId: string
+
+    /** number of live active outrights league bound markets */
+    liveOutrightsTotalCount: number
 }
 
 export interface LeagueChange {
@@ -50,5 +53,6 @@ export interface LeagueChange {
     liveFixturesTotalCount: number,
     fixturesTotalCount: number,
     fixturesCount: number,
-    outrightsTotalCount: number
+    outrightsTotalCount: number,
+    liveOutrightsTotalCount: number;
 }

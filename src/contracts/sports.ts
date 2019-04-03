@@ -19,13 +19,16 @@ export interface Sport {
     /** number of games, both live and pre-live filtered by time range */
     fixturesCount: number
 
-    /** number of active outrights league bound markets */
+    /** number of active outrights sport bound markets */
     outrightsTotalCount: number
 
     entityType: EntityType
 
     /** array based on tags of events belonging to sport*/
     tags: string[]
+
+    /** number of live active outrights sport bound markets */
+    liveOutrightsTotalCount: number
 }
 
 export interface SportChange {
@@ -33,5 +36,6 @@ export interface SportChange {
     liveFixturesTotalCount: number,
     fixturesTotalCount: number,
     fixturesCount: number,
-    outrightsTotalCount: number
+    outrightsTotalCount: number,
+    liveOutrightsTotalCount: number
 }

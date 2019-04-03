@@ -2,6 +2,7 @@
 ## [2.6.0]
 ### Added
 - Added new fields to totePoolDetails
+- Added liveOutrightsTotalCount to sports, leagues and regions
 ## [2.5.0]
 ### Added
 - Add 'Finished' status to GamePart

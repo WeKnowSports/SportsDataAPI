@@ -23,10 +23,13 @@ export interface Region {
     /** number of games, both live and pre-live filtered by time range*/
     fixturesCount: number
 
-    /** number of active outrights league bound markets */
+    /** number of active outrights region bound markets */
     outrightsTotalCount: number
 
     entityType: EntityType
+
+    /** number of live active outrights region bound markets */
+    liveOutrightsTotalCount: number
 }
 
 export interface RegionChange {
@@ -36,5 +39,6 @@ export interface RegionChange {
     liveFixturesTotalCount: number,
     fixturesTotalCount: number,
     fixturesCount: number,
-    outrightsTotalCount: number
+    outrightsTotalCount: number,
+    liveOutrightsTotalCount: number
 }
