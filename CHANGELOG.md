@@ -3,6 +3,8 @@
 ### Added
 - Added new fields to totePoolDetails
 - Added liveOutrightsTotalCount to sports, leagues and regions
+### Changed
+- MarketChange entities now contain full Selections
 ## [2.5.0]
 ### Added
 - Add 'Finished' status to GamePart

@@ -1,5 +1,5 @@
 import { EntityType, Dictionary, ISODateTimeString } from './common'
-import { Selection, SelectionChange } from './selection'
+import { Selection } from './selection'
 /**
      * Market
      */
@@ -54,7 +54,7 @@ export interface MarketChange {
     id: string,
     name: string,
     betslipLine: string,
-    selections: SelectionChange[],
+    selections: Selection[],
     eventId: string,
     isSuspended: boolean,
     liveData: LiveData | null,
